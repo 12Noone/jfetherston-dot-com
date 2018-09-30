@@ -18,8 +18,9 @@ class Menu extends Component {
             </div>
             <div className="pull-right col-6">
               <ul className="inline-list">
-                <li onClick={() => showViewer('about')}>About</li>
-                <li onClick={() => showViewer('contact')}>Contact</li>
+                <li onClick={() => showViewer('about')}>About Me</li>
+                <li onClick={() => showViewer('contact')}>Contact Me</li>
+                <li>Find Me</li>
               </ul>
             </div>
           </div>

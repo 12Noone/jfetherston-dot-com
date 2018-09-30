@@ -20,7 +20,6 @@ class App extends Component {
   }
 
   showViewer(link) {
-    console.log(link);
     this.setState({ viewerOpen: true })
     _.find(viewerOptionsData, (idx) => {
       if (idx.navLink === link) {
@@ -38,7 +37,6 @@ class App extends Component {
 
   render() {
     const { viewerOptions, viewerOpen } = this.state;
-    console.log(viewerOptions);
     return (
       <div>
         <Menu showViewer={this.showViewer} hideViewer={this.hideViewer} />

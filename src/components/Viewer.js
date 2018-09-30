@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from 'prop-types';
 import "../stylesheets/Viewer.less";
 
@@ -6,7 +6,6 @@ const Viewer = ({ handleClose, show, viewerOptions }) => {
   const showHideClassName = show
     ? "viewer display-block"
     : "viewer display-none";
-
   return (
     <div className={showHideClassName}>
       <section className="viewer-main">
@@ -17,6 +16,11 @@ const Viewer = ({ handleClose, show, viewerOptions }) => {
           <h1>{viewerOptions.header}</h1>
           <h5>{viewerOptions.subHeading}</h5>
           <p>{viewerOptions.bodyCopy}</p>
+          {viewerOptions.image ? (
+            <img src={viewerOptions.image} alt="Yours truly" />
+          ) : ( 
+            null
+          )}
         </div>
       </section>
     </div>

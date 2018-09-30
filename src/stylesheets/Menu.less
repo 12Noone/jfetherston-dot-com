@@ -1,3 +1,5 @@
+@pink: #EF476F;
+
 .menu-container {
   height: 50px;
   position: relative;
@@ -13,7 +15,22 @@
       list-style: none;
       li {
         display: inline;
-        padding: 0 15px;
+        cursor: pointer;
+        position: relative;
+        margin: 0 15px;
+        &:after {
+          content: '';
+          position: absolute;
+          height: 5px;
+          width: 0;
+          left: 0;
+          bottom: -5px;
+          background-color: @pink;
+          transition: width .5s ease;
+        }
+        &:hover::after {
+          width: 100%;
+        }
       }
     }
   }

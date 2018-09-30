@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 
 class Menu extends Component {
   constructor(props) {
@@ -6,6 +7,8 @@ class Menu extends Component {
   }
 
   render() {
+    const { showViewer, hideViewer } = this.props;
+
     return (
       <div className="menu-container container-fluid">
         <div className="col-12">
@@ -15,8 +18,8 @@ class Menu extends Component {
             </div>
             <div className="pull-right col-6">
               <ul className="inline-list">
-                <li>About</li>
-                <li>Contact</li>
+                <li onClick={() => showViewer('about')}>About</li>
+                <li onClick={() => showViewer('contact')}>Contact</li>
               </ul>
             </div>
           </div>
@@ -24,6 +27,11 @@ class Menu extends Component {
       </div>
     );
   }
+}
+
+Menu.propTypes = {
+  showViewer: PropTypes.func.isRequired,
+  hideViewer: PropTypes.func.isRequired
 }
 
 export default Menu;

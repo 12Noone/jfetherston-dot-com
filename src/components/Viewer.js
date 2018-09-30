@@ -12,15 +12,23 @@ const Viewer = ({ handleClose, show, viewerOptions }) => {
         <div className="close-viewer" onClick={handleClose}>
           X
         </div>
-        <div className="viewer-body">
-          <h1>{viewerOptions.header}</h1>
-          <h5>{viewerOptions.subHeading}</h5>
-          <p>{viewerOptions.bodyCopy}</p>
-          {viewerOptions.image ? (
-            <img src={viewerOptions.image} alt="Yours truly" />
-          ) : ( 
-            null
-          )}
+        <div className="viewer-body container">
+          <div className="col-sm-12">
+            <div className="row">
+              {viewerOptions.image ? (
+                <div className="image-container col-sm-6">
+                  <img src={viewerOptions.image} alt="Yours truly" />
+                </div>
+              ) : ( 
+                null
+              )}
+              <div className="copy-container col-sm-6">
+                <h1>{viewerOptions.header}</h1>
+                <h5>{viewerOptions.subHeading}</h5>
+                <p>{viewerOptions.bodyCopy}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

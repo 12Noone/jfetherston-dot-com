@@ -3,7 +3,7 @@ const viewerOptionsData = {
   about: {
     navLink: 'about',
     header: 'What else is there?',
-    subHeading: 'Coder • Knitter • Runner',
+    subHeading: 'some cool edgy but approachable sub header',
     bodyCopy: 'Currently an engineer with Zola, the best tech has to offer in the way of wedding registries and planning tools.'
   },
   contact: {

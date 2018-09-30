@@ -1,3 +1,5 @@
+@pink: #EF476F;
+
 .viewer {
     position: fixed;
     top: 0;
@@ -14,7 +16,21 @@
     height: auto;
     top:50%;
     left:50%;
+    padding: 60px;
     transform: translate(-50%,-50%);
+    .viewer-body {
+      h1 {
+        margin-bottom: 25px;
+      }
+    }
+    .close-viewer {
+      cursor: pointer;
+      text-align: right;
+      font-size: 18px;
+      &:hover {
+        color: @pink;
+      }
+    }
   }
   
   .display-block {

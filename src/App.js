@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import _ from 'lodash';
 import Menu from '../src/components/Menu';
 import Viewer from '../src/components/Viewer';
-import viewerOptionsData from '../src/viewerOptionsData';
+import { viewerOptionsData } from '../src/viewerOptionsData';
 import '../src/stylesheets/core.less';
 import '../src/stylesheets/Menu.less';
 

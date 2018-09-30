@@ -1,4 +1,4 @@
-#Finally got around to updating this thing now that I'm:
+Finally got around to updating this thing now that I'm:
 
 1) A lot more skilled
 2) Married

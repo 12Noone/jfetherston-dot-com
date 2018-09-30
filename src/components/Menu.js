@@ -8,12 +8,12 @@ class Menu extends Component {
   render() {
     return (
       <div className="menu-container container-fluid">
-        <div className="row">
-          <div className="col-sm-12">
-            <div className="pull-left col-sm-6">
+        <div className="col-12">
+          <div className="row">
+            <div className="pull-left col-6">
               <h1>Jill Fetherston</h1>
             </div>
-            <div className="pull-right col-sm-6">
+            <div className="pull-right col-6">
               <ul className="inline-list">
                 <li>About</li>
                 <li>Contact</li>

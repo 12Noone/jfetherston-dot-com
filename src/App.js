@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Menu from '../src/components/Menu';
+import '../src/stylesheets/core.less';
 import '../src/stylesheets/Menu.less';
 
 

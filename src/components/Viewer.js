@@ -10,8 +10,13 @@ const Viewer = ({ handleClose, show, viewerOptions }) => {
   return (
     <div className={showHideClassName}>
       <section className="viewer-main">
+        <div className="close-viewer" onClick={handleClose}>
+          X
+        </div>
         <div className="viewer-header">
-        <h1>{viewerOptions.header}</h1>
+          <h1>{viewerOptions.header}</h1>
+          <h5>{viewerOptions.subHeading}</h5>
+          <p>{viewerOptions.bodyCopy}</p>
         </div>
       </section>
     </div>

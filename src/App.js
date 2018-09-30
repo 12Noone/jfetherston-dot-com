@@ -42,7 +42,7 @@ class App extends Component {
     return (
       <div>
         <Menu showViewer={this.showViewer} hideViewer={this.hideViewer} />
-        <Viewer show={this.state.viewerOpen} handleClose={this.hideViewer} viewerOptions={viewerOptions} />
+        <Viewer show={viewerOpen} handleClose={this.hideViewer} viewerOptions={viewerOptions} />
       </div>
     );
   }

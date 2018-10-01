@@ -6,6 +6,7 @@ import { projectData } from '../viewerOptionsData';
 class Project extends Component {
 
   render() {
+    console.log(projectData);
     return (
       <div className="project-container">
         <div className="project-tile blue">

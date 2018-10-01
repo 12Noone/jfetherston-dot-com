@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
+import createFragment from 'react-addons-create-fragment';
 import Menu from '../src/components/Menu';
 import Viewer from '../src/components/Viewer';
 import Project from '../src/components/Project';
@@ -38,6 +39,14 @@ class App extends Component {
 
   render() {
     const { viewerOptions, viewerOpen } = this.state;
+    // themeGroups.map((themeGroup, idx) => (
+    //   themeList.push(
+    //     createFragment({
+    //       tile: <Project currentTheme={currentThemeKey} themeGroup={themeGroup} weddingTheme={weddingTheme} setWeddingTheme={setWeddingTheme} onboard={onboard} weddingSlug={weddingSlug} />,
+    //       clearFix: getClearClass(idx)
+    //     })
+    //   )
+    // ));
 
     return (
       <div>

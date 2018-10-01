@@ -4,7 +4,7 @@ import _ from 'lodash';
 import Menu from '../src/components/Menu';
 import Viewer from '../src/components/Viewer';
 import Project from '../src/components/Project';
-import { viewerOptionsData } from '../src/viewerOptionsData';
+import { viewerOptionsData, projectData } from '../src/viewerOptionsData';
 import '../src/stylesheets/core.less';
 import '../src/stylesheets/Menu.less';
 
@@ -38,11 +38,12 @@ class App extends Component {
 
   render() {
     const { viewerOptions, viewerOpen } = this.state;
+
     return (
       <div>
         <Menu showViewer={this.showViewer} hideViewer={this.hideViewer} />
         <Viewer show={viewerOpen} handleClose={this.hideViewer} viewerOptions={viewerOptions} />
-        <Project />
+        <Project show={viewerOpen} handleClose={this.hideViewer} />
       </div>
     );
   }

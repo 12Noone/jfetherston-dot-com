@@ -20,7 +20,7 @@ class Menu extends Component {
               <ul className="inline-list">
                 <li onClick={() => showViewer('about')}>About Me</li>
                 <li onClick={() => showViewer('contact')}>Contact Me</li>
-                <li>Find Me</li>
+                <li onClick={() => showViewer('find me')}>Find Me</li>
               </ul>
             </div>
           </div>

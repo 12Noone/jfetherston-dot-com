@@ -16,6 +16,10 @@ export const viewerOptionsData = {
     bodyCopy: 'probably a contact form. oh god this doesnt mean redux-forms does it',
     image: false
   },
+  findMe: {
+    navLink: 'find me',
+    header: 'Other places I may be',
+  }
 };
 
 export const projectData = {

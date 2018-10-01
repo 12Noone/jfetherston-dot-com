@@ -1,0 +1,54 @@
+@yellow: #FFD166;
+@pink: #EF476F;
+@white: #FFFFFF;
+@blue: #01BAEF;
+@green: #00BFB2;
+@darkBlue: #88498F;
+
+.project-container {
+  display: flex;
+  .project-tile {
+    margin: 10px;
+    cursor: pointer;
+    width: 303px;
+    height: 300px;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transition: .5s background-color ease;
+    }
+    &:hover::after {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .project-copy {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h5 {
+        color: @white;
+      }
+    }
+    &.pink {
+      background-color: @pink;
+    }
+    &.yellow {
+      background-color: @yellow;
+    }
+    &.blue {
+      background-color: @blue;
+    }
+    &.green {
+      background-color: @green;
+    }
+    &.dark-blue {
+      background-color: @darkBlue;
+    }
+  }
+}

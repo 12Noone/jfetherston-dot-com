@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import _ from 'lodash';
 import Menu from '../src/components/Menu';
 import Viewer from '../src/components/Viewer';
+import Project from '../src/components/Project';
 import { viewerOptionsData } from '../src/viewerOptionsData';
 import '../src/stylesheets/core.less';
 import '../src/stylesheets/Menu.less';
@@ -41,6 +42,7 @@ class App extends Component {
       <div>
         <Menu showViewer={this.showViewer} hideViewer={this.hideViewer} />
         <Viewer show={viewerOpen} handleClose={this.hideViewer} viewerOptions={viewerOptions} />
+        <Project />
       </div>
     );
   }

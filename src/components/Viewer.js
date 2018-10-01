@@ -16,13 +16,13 @@ const Viewer = ({ handleClose, show, viewerOptions }) => {
           <div className="col-sm-12">
             <div className="row">
               {viewerOptions.image ? (
-                <div className="image-container col-sm-6">
+                <div className="image-container col-sm-5">
                   <img src={viewerOptions.image} alt="Yours truly" />
                 </div>
               ) : ( 
                 null
               )}
-              <div className="copy-container col-sm-6">
+              <div className="copy-container col-sm-5">
                 <h1>{viewerOptions.header}</h1>
                 <h5>{viewerOptions.subHeading}</h5>
                 <p>{viewerOptions.bodyCopy}</p>

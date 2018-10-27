@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
+import { viewerOptionsData } from '../viewerOptionsData';
 
 class Menu extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
-    const { showViewer, hideViewer } = this.props;
+    const { showViewer } = this.props;
 
     return (
       <div className="menu-container container-fluid">
@@ -18,9 +16,9 @@ class Menu extends Component {
             </div>
             <div className="pull-right col-6">
               <ul className="inline-list">
-                <li onClick={() => showViewer('about')}>About Me</li>
-                <li onClick={() => showViewer('contact')}>Contact Me</li>
-                <li onClick={() => showViewer('find me')}>Find Me</li>
+                <li onClick={() => showViewer('about', viewerOptionsData)}>About Me</li>
+                <li onClick={() => showViewer('contact', viewerOptionsData)}>Contact Me</li>
+                <li onClick={() => showViewer('find me', viewerOptionsData)}>Find Me</li>
               </ul>
             </div>
           </div>

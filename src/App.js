@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import createFragment from 'react-addons-create-fragment';
 import Menu from '../src/components/Menu';
 import Viewer from '../src/components/Viewer';
 import Project from '../src/components/Project';
-import { viewerOptionsData, projectData } from '../src/viewerOptionsData';
 import '../src/stylesheets/core.less';
 import '../src/stylesheets/Menu.less';
 
@@ -21,10 +19,12 @@ class App extends Component {
     this.hideViewer = this.hideViewer.bind(this);
   }
 
-  showViewer(link) {
+  showViewer(link, data) {
+    console.log(data);
     this.setState({ viewerOpen: true })
-    _.find(viewerOptionsData, (idx) => {
-      if (idx.navLink === link) {
+    _.find(data, (idx) => {
+      if (idx.key === link) {
+        console.log(idx);
         this.setState({
           viewerOptions: idx,
           viewerOpen: true
@@ -39,20 +39,12 @@ class App extends Component {
 
   render() {
     const { viewerOptions, viewerOpen } = this.state;
-    // themeGroups.map((themeGroup, idx) => (
-    //   themeList.push(
-    //     createFragment({
-    //       tile: <Project currentTheme={currentThemeKey} themeGroup={themeGroup} weddingTheme={weddingTheme} setWeddingTheme={setWeddingTheme} onboard={onboard} weddingSlug={weddingSlug} />,
-    //       clearFix: getClearClass(idx)
-    //     })
-    //   )
-    // ));
 
     return (
       <div>
         <Menu showViewer={this.showViewer} hideViewer={this.hideViewer} />
         <Viewer show={viewerOpen} handleClose={this.hideViewer} viewerOptions={viewerOptions} />
-        <Project show={viewerOpen} handleClose={this.hideViewer} />
+        <Project showViewer={this.showViewer} handleClose={this.hideViewer} />
       </div>
     );
   }

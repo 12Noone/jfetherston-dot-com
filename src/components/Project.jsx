@@ -1,35 +1,35 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import "../stylesheets/Project.less";
-import { projectData } from '../viewerOptionsData';
+import { projectData } from '../viewerOptionsData.js';
 
 class Project extends Component {
 
   render() {
-    console.log(projectData);
+    const { showViewer } = this.props;
     return (
       <div className="project-container">
-        <div className="project-tile blue">
+        <div className="project-tile blue" onClick={() => showViewer('themeDesign', projectData)}>
           <div className="project-copy">
             <h5>Themes</h5>
           </div>
         </div>
-        <div className="project-tile yellow">
+        <div className="project-tile yellow" onClick={() => showViewer('themeRedesign', projectData)}>
           <div className="project-copy">
             <h5>Theme Listing Redesign</h5>
           </div>
         </div>
-        <div className="project-tile green">
+        <div className="project-tile green" onClick={() => showViewer('unification', projectData)}>
           <div className="project-copy">
             <h5>Unification</h5>
           </div>
         </div>
-        <div className="project-tile dark-blue">
+        <div className="project-tile dark-blue" onClick={() => showViewer('preauthPages', projectData)}>
           <div className="project-copy">
             <h5>Preauth Project</h5>
           </div>
         </div>
-        <div className="project-tile pink">
+        <div className="project-tile pink" onClick={() => showViewer('guestNotInGuestList', projectData)}>
           <div className="project-copy">
             <h5>Guest NOT In Guest List</h5>
           </div>

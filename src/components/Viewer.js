@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import "../stylesheets/Viewer.less";
 
 const Viewer = ({ handleClose, show, viewerOptions }) => {
-  const showHideClassName = show
-    ? "viewer display-block"
-    : "viewer display-none";
+  const showHideClassName = show ? "viewer display-block" : "viewer display-none";
   return (
     <div className={showHideClassName}>
       <section className="viewer-main">

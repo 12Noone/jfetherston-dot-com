@@ -69,7 +69,7 @@ export const projectData = {
     tech: ['React', 'Less']
   },
   preauthPages: {
-    key: 'preauth',
+    key: 'preauthPages',
     header: 'Preauth Pages',
     subheading: 'Opening the gates of Zola up to the unregistered masses',
     bodyCopy: [

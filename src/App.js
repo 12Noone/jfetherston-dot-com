@@ -20,11 +20,9 @@ class App extends Component {
   }
 
   showViewer(link, data) {
-    console.log(data);
     this.setState({ viewerOpen: true })
     _.find(data, (idx) => {
       if (idx.key === link) {
-        console.log(idx);
         this.setState({
           viewerOptions: idx,
           viewerOpen: true

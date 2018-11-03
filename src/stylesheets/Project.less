@@ -3,10 +3,12 @@
 @white: #FFFFFF;
 @blue: #01BAEF;
 @green: #00BFB2;
-@darkBlue: #88498F;
+@purple: #88498F;
 
 .project-container {
-  margin-top: 90px;
+  display: flex;
+  flex-flow: wrap;
+  top: 200px;
   max-width: 1350px;
   display: flex;
   z-index: 0;
@@ -52,8 +54,8 @@
     &.green {
       background-color: @green;
     }
-    &.dark-blue {
-      background-color: @darkBlue;
+    &.purple {
+      background-color: @purple;
     }
   }
 }

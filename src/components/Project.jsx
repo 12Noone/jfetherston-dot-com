@@ -24,7 +24,7 @@ class Project extends Component {
             <h5>Unification</h5>
           </div>
         </div>
-        <div className="project-tile dark-blue" onClick={() => showViewer('preauthPages', projectData)}>
+        <div className="project-tile purple" onClick={() => showViewer('preauthPages', projectData)}>
           <div className="project-copy">
             <h5>Preauth Project</h5>
           </div>
@@ -32,6 +32,16 @@ class Project extends Component {
         <div className="project-tile pink" onClick={() => showViewer('guestNotInGuestList', projectData)}>
           <div className="project-copy">
             <h5>Guest NOT In Guest List</h5>
+          </div>
+        </div>
+        <div className="project-tile green" onClick={() => showViewer('mobileSnapShot', projectData)}>
+          <div className="project-copy">
+            <h5>Mobile Snap Shot</h5>
+          </div>
+        </div>
+        <div className="project-tile purple" onClick={() => showViewer('flightpathRedesign', projectData)}>
+          <div className="project-copy">
+            <h5>Flightpath Redesign</h5>
           </div>
         </div>
       </div>

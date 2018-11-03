@@ -45,7 +45,7 @@ export const projectData = {
   guestNotInGuestList: {
     key: 'guestNotInGuestList',
     header: 'Guest NOT in Guest List',
-    subheading: 'What do you do if you go to RSVP to a wedding only to realize ... you aren\'t on the list?',
+    subHeading: 'What do you do if you go to RSVP to a wedding only to realize ... you aren\'t on the list?',
     bodyCopy: [
       ['This was a really fun project and was a great learning experience. The premise of the project was to solve a problem that happens quite a bit - A guest tries to RSVP to a couples\' wedding only to realize they aren\'t on the guest list.'],
       ['Previously, the only solution for guests in this predicament was copy telling them to call Zola customer service. This resulted in a lot of really weird mediation between Zola Customer Care, the couple, and the guests, as we all come together to figure out what the issue is. More often than not, its a misspelling on the couples\'s part. As someone who misspelled my father in law\'s name I can lend some anecdotal evidence on the issue. Much to my chagrin.']
@@ -59,7 +59,7 @@ export const projectData = {
   unification: {
     key: 'unification',
     header: 'Unification',
-    subheading: 'Two platforms, two stacks, two looks, too much',
+    subHeading: 'Two platforms, two stacks, two looks, too much',
     bodyCopy: [
       ['When Zola first launched, our sole business was Registries - bringing the best assortment of products and experiences to couples everywhere. In 2017, we launched Zola Weddings which was a suite of online planning tools - Checklist, Guest List, and Websites specifically. Over time the two diverged in terms of style. They were written years apart, which is as good as a decade in tech, so in some parts of the site you might see a square button and others a rounded button. This button topic is contentious at Zola, its best not to bring it up. Other problems included little irritations like being unable to navigate between the two platforms easily on mobile as well as inconsistencies in styles, colors, or even fonts.'],
     ],
@@ -71,7 +71,7 @@ export const projectData = {
   preauthPages: {
     key: 'preauthPages',
     header: 'Preauth Pages',
-    subheading: 'Opening the gates of Zola up to the unregistered masses',
+    subHeading: 'Opening the gates of Zola up to the unregistered masses',
     bodyCopy: [
       ['Previously, the only way to really interact with Zola\'s planning tools was to create an account. This is a lot of friction to overcome for a user who\'s on the fence between Wedding Wire, The Knot, or the dozens of other competeing wedding tech sites (bet you didn\'t realize Wedding Tech was a thing till just now)']
     ],
@@ -79,6 +79,27 @@ export const projectData = {
       ['The solution here was to overhaul how routing works to allow not-users to view these pages as well. We created a suite of guest-user landing pages shouting Zola from every image, page, and paragraph. Now users can visit the themes listing page to peruse designs, or read up on how checklist or guest lists work without the barrier of creating an account.']
     ],
     tech: ['React', 'Redux', 'React Router', 'Less']
+  },
+  mobileSnapShot: {
+    key: 'mobileSnapShot',
+    header: 'Mobile Snap Shot',
+    subHeading: 'Fun little query param project',
+    bodyCopy: [
+      ['Our iOS engineer came up to me the other day with an interesting problem. The way they display the current state of a user\'s wedding website is to make a request to create a snap shot of the user\'s actual wedding website. This works well except because our websites have the ability to hide pages and the showing and hiding of pages is handled server side they were unable to create snap shots of pages that were hidden. As well, they wanted the ability to disable tracking since when these routes are hit no one is actually viewing the pages. Another param (badum tish) was to be able to hide the red banner alerting guests their website was unpublished because they were handling that messaging elsewhere in the App already as well as the navigation.']
+    ],
+    solve: [
+      ['Using query parameters, mobile can pass true values through to the request for a given page even if it\'s hidden, hide or show the navigation, disable banners, and disable tracking. ']
+    ],
+    tech: ['React', 'Redux', 'React Router']
+  },
+  flightpathRedesign: {
+    key: 'flightpathRedesign',
+    header: 'Flightpath Redesign',
+    subHeading: 'Baby\'s First Project',
+    bodyCopy: [
+      ['One of my favorite projects from my time at Flighpath was working on the company\'s site redesign. I was lucky enough to work with some incredibly talented engineers. I was responsible for the Work page as well as all of the individual client pages. It was so much fun and I learned so much doing it.']
+    ],
+    tech: ['CSS', '.Net']
   }
 }
 

@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import "../stylesheets/Viewer.less";
 
 const Viewer = ({ handleClose, show, viewerOptions }) => {
-  const showHideClassName = show ? "viewer display-block" : "viewer display-none";
+  const showHideClassName = show ? "viewer active" : "viewer";
   return (
-    <div className={showHideClassName}>
+    <div className={showHideClassName} onClick={handleClose}>
       <section className="viewer-main">
         <div className="close-viewer" onClick={handleClose}>
           X

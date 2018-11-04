@@ -5,7 +5,7 @@ import { viewerOptionsData } from '../viewerOptionsData';
 class Menu extends Component {
 
   render() {
-    const { showViewer } = this.props;
+    const { setPanel } = this.props;
 
     return (
       <div className="menu-container container-fluid">
@@ -16,9 +16,9 @@ class Menu extends Component {
             </div>
             <div className="pull-right col-6">
               <ul className="inline-list">
-                <li onClick={() => showViewer('about', viewerOptionsData)}>About Me</li>
-                <li onClick={() => showViewer('contact', viewerOptionsData)}>Contact Me</li>
-                <li onClick={() => showViewer('find me', viewerOptionsData)}>Find Me</li>
+                <li onClick={() => setPanel('about', viewerOptionsData)}>About Me</li>
+                <li onClick={() => setPanel('contact', viewerOptionsData)}>Contact Me</li>
+                <li onClick={() => setPanel('find me', viewerOptionsData)}>Find Me</li>
               </ul>
             </div>
           </div>
@@ -29,7 +29,7 @@ class Menu extends Component {
 }
 
 Menu.propTypes = {
-  showViewer: PropTypes.func.isRequired,
+  setPanel: PropTypes.func.isRequired,
   hideViewer: PropTypes.func.isRequired
 }
 

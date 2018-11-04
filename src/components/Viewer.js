@@ -5,7 +5,7 @@ import "../stylesheets/Viewer.less";
 const Viewer = ({ handleClose, show, viewerOptions }) => {
   const showHideClassName = show ? "viewer active" : "viewer";
   return (
-    <div className={showHideClassName} onClick={handleClose}>
+    <div className={showHideClassName}>
       <section className="viewer-main">
         <div className="close-viewer" onClick={handleClose}>
           X

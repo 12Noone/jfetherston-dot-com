@@ -4,7 +4,7 @@ import aboutMe from '../src/images/about-me.jpg';
 export const viewerOptionsData = {
   about: {
     key: 'about',
-    header: 'What else is there?',
+    header: 'The other things',
     subHeading: 'Coding, Knitting, Reading, and Running',
     bodyCopy: 'Currently an engineer with Zola, the best the tech industry has to offer in the way of wedding registries and planning tools. When I\'m not working to make wedding plan suck less (a task that Sisyphus would sympathize with) you can find me knitting or perhaps cross stitching, plugged into an audio book and tuning out the world. Occasionally I guilt myself into exercise with a half marathon or two.',
     image: aboutMe,
@@ -100,6 +100,15 @@ export const projectData = {
       ['One of my favorite projects from my time at Flighpath was working on the company\'s site redesign. I was lucky enough to work with some incredibly talented engineers. I was responsible for the Work page as well as all of the individual client pages. It was so much fun and I learned so much doing it.']
     ],
     tech: ['CSS', '.Net']
+  },
+  cfd: {
+    key: 'cfd',
+    header: 'Custom Furniture Design',
+    subHeading: 'Was it Uber that said everybody needed a side hustle?',
+    bodyCopy: [
+      ['Custom Furniture Design is a stuido out in San Francisco and I routinely touch up their photos to mimick studio lighting.']
+    ],
+    tech: ['Photoshop']
   }
 }
 

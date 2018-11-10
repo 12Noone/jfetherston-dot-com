@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
+import { viewerOptionsData } from './viewerOptionsData';
 import Menu from '../src/components/Menu';
 import Viewer from '../src/components/Viewer';
 import Project from '../src/components/Project';
@@ -15,7 +16,7 @@ class App extends Component {
     this.state = {
       viewerOpen: false,
       viewerOptions: {},
-      panelData: {}
+      panelData: viewerOptionsData.about
     }
     this.showViewer = this.showViewer.bind(this);
     this.hideViewer = this.hideViewer.bind(this);
@@ -49,6 +50,7 @@ class App extends Component {
 
   render() {
     const { viewerOptions, viewerOpen, panelData } = this.state;
+    console.log(panelData);
     return (
       <div>
         <Menu setPanel={this.setPanel} hideViewer={this.hideViewer} />

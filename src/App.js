@@ -16,7 +16,8 @@ class App extends Component {
     this.state = {
       viewerOpen: false,
       viewerOptions: {},
-      panelData: viewerOptionsData.about
+      panelData: viewerOptionsData.about,
+      activeLink: 'about'
     }
     this.showViewer = this.showViewer.bind(this);
     this.hideViewer = this.hideViewer.bind(this);
@@ -39,6 +40,7 @@ class App extends Component {
       if (idx.key === link) {
         this.setState({
           panelData: idx,
+          activeLink: link
         });
       }
     });
@@ -49,11 +51,11 @@ class App extends Component {
   }
 
   render() {
-    const { viewerOptions, viewerOpen, panelData } = this.state;
+    const { viewerOptions, viewerOpen, panelData, activeLink } = this.state;
     console.log(panelData);
     return (
       <div>
-        <Menu setPanel={this.setPanel} hideViewer={this.hideViewer} />
+        <Menu setPanel={this.setPanel} hideViewer={this.hideViewer} activeLink={activeLink} />
         <InfoPanel panelData={panelData} />
         <Viewer show={viewerOpen} handleClose={this.hideViewer} viewerOptions={viewerOptions} />
         <Project showViewer={this.showViewer} handleClose={this.hideViewer} />

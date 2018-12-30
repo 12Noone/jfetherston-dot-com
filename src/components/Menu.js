@@ -18,7 +18,6 @@ class Menu extends Component {
               <ul className="inline-list">
                 <li onClick={() => setPanel('about', viewerOptionsData)} className={activeLink === 'about' ? 'active-link' : ''}>About Me</li>
                 <li onClick={() => setPanel('contact', viewerOptionsData) } className={activeLink === 'contact' ? 'active-link' : ''}>Contact Me</li>
-                <li onClick={() => setPanel('find me', viewerOptionsData)} className={activeLink === 'find me' ? 'active-link' : ''}>Find Me</li>
               </ul>
             </div>
           </div>

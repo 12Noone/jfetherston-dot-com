@@ -10,7 +10,7 @@ class InfoPanel extends Component {
       <div className="hero-container">
         <div className="panel-container">
           <div className="panel-copy">
-            <h1 className="panel-heading">{panelData.header}</h1>
+            <h1 className="heading">{panelData.header}</h1>
             <h2 className="panel-subheading">{panelData.subHeading}</h2>
             <p>{panelData.bodyCopy}</p>
           </div>

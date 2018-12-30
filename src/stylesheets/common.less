@@ -1,0 +1,24 @@
+// Typography color variables
+@yellow: #FFD166;
+@pink: #EF476F;
+@white: #FFFFFF;
+@blue: #01BAEF;
+@green: #00BFB2;
+@purple: #88498F;
+
+// Heading / Underline
+.heading {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  margin-bottom: 30px;
+  &:after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 98%;
+    right: 0;
+    bottom: -8px;
+    background-color: @pink;
+  }
+}

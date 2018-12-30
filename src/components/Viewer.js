@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import { projectData } from '../viewerOptionsData';
 import "../stylesheets/Viewer.less";
 
 
@@ -9,7 +8,26 @@ class Viewer extends Component {
   constructor(props) {
     super(props);
     this.renderTech = this.renderTech.bind(this);
-    this.renderCopy = this.renderCopy. bind(this);
+    this.renderCopy = this.renderCopy.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  componentWillMount() {
+    document.addEventListener('mousedown', this.handleClick);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClick);
+  }
+
+  handleClick(e) {
+    const { handleClose } = this.props;
+    console.log('what.', this.node);
+    if (this.node.contains(e.target)) {
+      console.log('???');
+      return;
+    }
+    handleClose();
   }
 
   renderTech(viewerOptions, techItems) {
@@ -37,7 +55,7 @@ class Viewer extends Component {
     const showHideClassName = show ? "viewer active" : "viewer";
     return (
       <div className={showHideClassName}>
-      <section className="viewer-main">
+      <section className="viewer-main" ref={node => this.node = node}>
         <div className="close-viewer" onClick={handleClose}>
           X
         </div>
@@ -69,8 +87,6 @@ class Viewer extends Component {
 };
 
 Viewer.propTypes = {
-  //   showViewer: PropTypes.func.isRequired,
-  //   hideViewer: PropTypes.func.isRequired
   viewerOptions: PropTypes.shape({})
 };
 

@@ -6,7 +6,7 @@ export const viewerOptionsData = {
     key: 'about',
     header: 'The other things',
     subHeading: 'Coding, Knitting, Reading, and Running',
-    bodyCopy: 'Currently an engineer with Zola, the best the tech industry has to offer in the way of wedding registries and planning tools. When I\'m not working to make wedding plan suck less (a task that Sisyphus would sympathize with) you can find me knitting or perhaps cross stitching, plugged into an audio book and tuning out the world. Occasionally I guilt myself into exercise with a half marathon or two.',
+    bodyCopy: 'I\'m currently an engineer with Zola, the best the tech industry has to offer in the way of wedding registries and planning tools. When I\'m not working to make wedding plan suck less (a task that Sisyphus would sympathize with) you can find me knitting or perhaps cross stitching, plugged into an audio book and tuning out the world. Occasionally I guilt myself into exercise with a half marathon or two.',
     image: aboutMe,
   },
   contact: {
@@ -16,11 +16,6 @@ export const viewerOptionsData = {
     bodyCopy: 'probably a contact form. oh god this doesnt mean redux-forms does it',
     image: false
   },
-  findMe: {
-    key: 'find me',
-    header: 'Other places I may be',
-    image: false
-  }
 };
 
 export const projectData = [
@@ -38,7 +33,7 @@ export const projectData = [
     subHeading: 'First serious project at Zola - Overhaul the Themes Listing Page',
     bodyCopy: [
       ['This project was a huge undertaking spanning two large initiatives.'],
-      ['First: Implement the ability to filter themes by color or by matching invitation'],
+      ['First: Implement the ability to filter themes by color or by matching invitation. '],
       ['Second: Restructure themes to allow us to implement \'variations\'. This meant a change to how themes were stored in the database going from a single layer object of theme data to a notion of Theme Groups which have themes assigned to them - a parent and a child. Swatch toggle buttons allowed a user to thumb through these variations and ultimately make a selection.']
     ],
     tech: ['React', 'Redux', 'Node', 'Less'],
@@ -105,7 +100,7 @@ export const projectData = [
     bodyCopy: [
       ['One of my favorite projects from my time at Flighpath was working on the company\'s site redesign. I was lucky enough to work with some incredibly talented engineers. I was responsible for the Work page as well as all of the individual client pages. It was so much fun and I learned so much doing it.']
     ],
-    tech: ['CSS', '.Net'],
+    tech: ['CSS'],
     color: 'green'
   },
   {

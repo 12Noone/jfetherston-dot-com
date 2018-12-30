@@ -28,6 +28,7 @@ class Project extends Component {
   render() {
     return (
       <div id="projects">
+        <h1 className="heading">Past and Current Projects</h1>
         { this.renderProjectTile() }
       </div>
     );

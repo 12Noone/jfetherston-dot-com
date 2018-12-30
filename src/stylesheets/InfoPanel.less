@@ -1,29 +1,33 @@
 @pink: #EF476F;
 
-.panel-container {
-  height: 95vh;
-  .panel-copy {
-    padding: 90px;
-    margin: auto;
-    max-width: 1000px;
-    margin: auto;
-    .panel-heading {
-      position: relative;
-      display: inline-block;
-      font-size: 30px;
-      margin-bottom: 30px;
-      &:after {
-        content: '';
-        position: absolute;
-        height: 5px;
-        width: 98%;
-        right: 0;
-        bottom: -8px;
-        background-color: @pink;
+.hero-container {
+  .panel-container {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    .panel-copy {
+      padding: 90px;
+      margin: auto;
+      max-width: 1000px;
+      margin: auto;
+      .panel-heading {
+        position: relative;
+        display: inline-block;
+        font-size: 30px;
+        margin-bottom: 30px;
+        &:after {
+          content: '';
+          position: absolute;
+          height: 5px;
+          width: 98%;
+          right: 0;
+          bottom: -8px;
+          background-color: @pink;
+        }
       }
-    }
-    .panel-subheading {
-      font-size: 18px;
+      .panel-subheading {
+        font-size: 18px;
+      }
     }
   }
   .arrow-container {

@@ -29,7 +29,8 @@ export const projectData = [
     header: 'Theme Design',
     subHeading: 'To infinity and beyond!',
     bodyCopy: ['Themes have been my baby from the moment I started at Zola. When I first joined the team, we had about 35 themes. Over the course of the year the number of themes have grown by leaps and bounds as I first coded new themes and later variations. Now, I oversee theme development as we continue to create more gorgeous sites for couples to pick from.'],
-    tech: ['Less', 'Postgresql']
+    tech: ['Less', 'Postgresql'],
+    color: 'purple'
   },
   {
     key: 'themeRedesign',
@@ -40,7 +41,8 @@ export const projectData = [
       ['First: Implement the ability to filter themes by color or by matching invitation'],
       ['Second: Restructure themes to allow us to implement \'variations\'. This meant a change to how themes were stored in the database going from a single layer object of theme data to a notion of Theme Groups which have themes assigned to them - a parent and a child. Swatch toggle buttons allowed a user to thumb through these variations and ultimately make a selection.']
     ],
-    tech: ['React', 'Redux', 'Node', 'Less']
+    tech: ['React', 'Redux', 'Node', 'Less'],
+    color: 'pink',
   },
   {
     key: 'guestNotInGuestList',
@@ -55,6 +57,7 @@ export const projectData = [
       ['This was a cool project because it introduced a new feature to Zola that hadn\'t previously been there (at least as far as the web is concerned): Notifications! Coding the badges was ridiculously satisfying.'],
     ],
     tech: ['React', 'Redux', 'Redux Forms', 'Less', 'Node'],
+    color: 'yellow'
   },
   {
     key: 'unification',
@@ -66,7 +69,8 @@ export const projectData = [
     solve: [
       ['Enter Unification. A singular navigation menu would straddle the two platforms. Both platforms received upgrades bringing them to more current web design as well as, well, making them match. My part in this was the secondary nav which changes dynamically with nav items based on the url. I also overhauled the checklist, guest list, and manage pages to allow for the new navigation']
     ],
-    tech: ['React', 'Less']
+    tech: ['React', 'Less'],
+    color: 'green'
   },
   {
     key: 'preauthPages',
@@ -78,7 +82,8 @@ export const projectData = [
     solve: [
       ['The solution here was to overhaul how routing works to allow not-users to view these pages as well. We created a suite of guest-user landing pages shouting Zola from every image, page, and paragraph. Now users can visit the themes listing page to peruse designs, or read up on how checklist or guest lists work without the barrier of creating an account.']
     ],
-    tech: ['React', 'Redux', 'React Router', 'Less']
+    tech: ['React', 'Redux', 'React Router', 'Less'],
+    color: 'purple'
   },
   {
     key: 'mobileSnapShot',
@@ -90,7 +95,8 @@ export const projectData = [
     solve: [
       ['Using query parameters, mobile can pass true values through to the request for a given page even if it\'s hidden, hide or show the navigation, disable banners, and disable tracking. ']
     ],
-    tech: ['React', 'Redux', 'React Router']
+    tech: ['React', 'Redux', 'React Router'],
+    color: 'blue'
   },
   {
     key: 'flightpathRedesign',
@@ -99,7 +105,8 @@ export const projectData = [
     bodyCopy: [
       ['One of my favorite projects from my time at Flighpath was working on the company\'s site redesign. I was lucky enough to work with some incredibly talented engineers. I was responsible for the Work page as well as all of the individual client pages. It was so much fun and I learned so much doing it.']
     ],
-    tech: ['CSS', '.Net']
+    tech: ['CSS', '.Net'],
+    color: 'green'
   },
   {
     key: 'cfd',
@@ -108,7 +115,8 @@ export const projectData = [
     bodyCopy: [
       ['Custom Furniture Design is a stuido out in San Francisco and I routinely touch up their photos to mimick studio lighting.']
     ],
-    tech: ['Photoshop']
+    tech: ['Photoshop'],
+    color: 'pink'
   }
 ]
 

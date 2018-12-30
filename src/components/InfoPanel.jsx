@@ -7,8 +7,8 @@ class InfoPanel extends Component {
   render() {
     const { panelData } = this.props;
     return (
-      <div className="panel-container">
-        <div className="col-12">
+      <div className="hero-container">
+        <div className="panel-container">
           <div className="panel-copy">
             <h1 className="panel-heading">{panelData.header}</h1>
             <h2 className="panel-subheading">{panelData.subHeading}</h2>

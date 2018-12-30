@@ -15,7 +15,7 @@ class Project extends Component {
     return (
       projectData.map((project, idx) => (
         <div className="project-container" key={idx}>
-          <div className="project-tile blue" onClick={() => showViewer(project.key, projectData)}>
+          <div className={['project-tile', project.color].join(' ')} onClick={() => showViewer(project.key, projectData)}>
             <div className="project-copy">
               <h5>{project.header}</h5>
             </div>
@@ -24,8 +24,6 @@ class Project extends Component {
       ))
     );
   }
-
-
 
   render() {
     return (

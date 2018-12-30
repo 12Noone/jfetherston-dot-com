@@ -57,8 +57,6 @@ class Project extends Component {
 }
 
 Project.propTypes = {
-  //   showViewer: PropTypes.func.isRequired,
-  //   hideViewer: PropTypes.func.isRequired
   viewerOptions: PropTypes.shape({})
 };
 

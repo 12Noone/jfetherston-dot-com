@@ -52,7 +52,6 @@ class App extends Component {
 
   render() {
     const { viewerOptions, viewerOpen, panelData, activeLink } = this.state;
-    console.log(panelData);
     return (
       <div>
         <Menu setPanel={this.setPanel} hideViewer={this.hideViewer} activeLink={activeLink} />

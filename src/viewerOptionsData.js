@@ -23,15 +23,15 @@ export const viewerOptionsData = {
   }
 };
 
-export const projectData = {
-  themeDesign: {
+export const projectData = [
+  {
     key: 'themeDesign',
     header: 'Theme Design',
     subHeading: 'To infinity and beyond!',
     bodyCopy: ['Themes have been my baby from the moment I started at Zola. When I first joined the team, we had about 35 themes. Over the course of the year the number of themes have grown by leaps and bounds as I first coded new themes and later variations. Now, I oversee theme development as we continue to create more gorgeous sites for couples to pick from.'],
     tech: ['Less', 'Postgresql']
   },
-  themeRedesign: {
+  {
     key: 'themeRedesign',
     header: 'Themes Listing Redesign',
     subHeading: 'First serious project at Zola - Overhaul the Themes Listing Page',
@@ -42,7 +42,7 @@ export const projectData = {
     ],
     tech: ['React', 'Redux', 'Node', 'Less']
   },
-  guestNotInGuestList: {
+  {
     key: 'guestNotInGuestList',
     header: 'Guest NOT in Guest List',
     subHeading: 'What do you do if you go to RSVP to a wedding only to realize ... you aren\'t on the list?',
@@ -53,10 +53,10 @@ export const projectData = {
     solve: [
       ['We implented a new link urging the guest to reach out to the couple via this handy dandy request form. Guests would fill this out triggering an email sent to the couple that the website belongs to. Couples would receive the email with a button taking them to view the request in the web where they could either accept or deny the request. Accepting would then add that guest to their wedding guest list which would allow the guest to then search for themselves and RSVP.'],
       ['This was a cool project because it introduced a new feature to Zola that hadn\'t previously been there (at least as far as the web is concerned): Notifications! Coding the badges was ridiculously satisfying.'],
-  ],
+    ],
     tech: ['React', 'Redux', 'Redux Forms', 'Less', 'Node'],
   },
-  unification: {
+  {
     key: 'unification',
     header: 'Unification',
     subHeading: 'Two platforms, two stacks, two looks, too much',
@@ -68,7 +68,7 @@ export const projectData = {
     ],
     tech: ['React', 'Less']
   },
-  preauthPages: {
+  {
     key: 'preauthPages',
     header: 'Preauth Pages',
     subHeading: 'Opening the gates of Zola up to the unregistered masses',
@@ -80,7 +80,7 @@ export const projectData = {
     ],
     tech: ['React', 'Redux', 'React Router', 'Less']
   },
-  mobileSnapShot: {
+  {
     key: 'mobileSnapShot',
     header: 'Mobile Snap Shot',
     subHeading: 'Fun little query param project',
@@ -92,7 +92,7 @@ export const projectData = {
     ],
     tech: ['React', 'Redux', 'React Router']
   },
-  flightpathRedesign: {
+  {
     key: 'flightpathRedesign',
     header: 'Flightpath Redesign',
     subHeading: 'Baby\'s First Project',
@@ -101,7 +101,7 @@ export const projectData = {
     ],
     tech: ['CSS', '.Net']
   },
-  cfd: {
+  {
     key: 'cfd',
     header: 'Custom Furniture Design',
     subHeading: 'Was it Uber that said everybody needed a side hustle?',
@@ -110,12 +110,9 @@ export const projectData = {
     ],
     tech: ['Photoshop']
   }
-}
+]
 
 /* 
 what other things do we do at zola ?
-
-
-
 */
 

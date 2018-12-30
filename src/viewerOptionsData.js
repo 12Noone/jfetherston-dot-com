@@ -117,6 +117,16 @@ export const projectData = [
     ],
     tech: ['Photoshop'],
     color: 'pink'
+  },
+  {
+    key: 'cms',
+    header: 'CMS Navigation',
+    subHeading: 'Linear Flow and a Win for Mobile',
+    bodyCopy: [
+      ['We wanted to see if a different flow for editing pages would lead to more published wedding websites. I created a new navigation flow utilizing a more linear step by step flow then set up an Optimizely test to track the differences. Optimizely aside, this was a huge coupe for the Weddings platform in mobile.']
+    ],
+    tech: ['React', 'Redux', 'React Router', 'Less', 'Optimizely'],
+    color: 'yellow'
   }
 ]
 

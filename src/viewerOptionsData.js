@@ -32,7 +32,7 @@ export const projectData = [
     header: 'Themes Listing Redesign',
     subHeading: 'First serious project at Zola - Overhaul the Themes Listing Page',
     bodyCopy: [
-      ['This project was a huge undertaking spanning two large initiatives.'],
+      ['This project was a huge undertaking spanning two large initiatives. '],
       ['First: Implement the ability to filter themes by color or by matching invitation. '],
       ['Second: Restructure themes to allow us to implement \'variations\'. This meant a change to how themes were stored in the database going from a single layer object of theme data to a notion of Theme Groups which have themes assigned to them - a parent and a child. Swatch toggle buttons allowed a user to thumb through these variations and ultimately make a selection.']
     ],
@@ -44,7 +44,7 @@ export const projectData = [
     header: 'Guest NOT in Guest List',
     subHeading: 'What do you do if you go to RSVP to a wedding only to realize ... you aren\'t on the list?',
     bodyCopy: [
-      ['This was a really fun project and was a great learning experience. The premise of the project was to solve a problem that happens quite a bit - A guest tries to RSVP to a couples\' wedding only to realize they aren\'t on the guest list.'],
+      ['This was a really fun project and was a great learning experience. The premise of the project was to solve a problem that happens quite a bit - A guest tries to RSVP to a couples\' wedding only to realize they aren\'t on the guest list. '],
       ['Previously, the only solution for guests in this predicament was copy telling them to call Zola customer service. This resulted in a lot of really weird mediation between Zola Customer Care, the couple, and the guests, as we all come together to figure out what the issue is. More often than not, its a misspelling on the couples\'s part. As someone who misspelled my father in law\'s name I can lend some anecdotal evidence on the issue. Much to my chagrin.']
     ],
     solve: [
@@ -90,7 +90,7 @@ export const projectData = [
     solve: [
       ['Using query parameters, mobile can pass true values through to the request for a given page even if it\'s hidden, hide or show the navigation, disable banners, and disable tracking. ']
     ],
-    tech: ['React', 'Redux', 'React Router'],
+    tech: ['React', 'Redux', 'React Router', 'Node'],
     color: 'blue'
   },
   {

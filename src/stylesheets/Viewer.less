@@ -1,4 +1,4 @@
-@pink: #EF476F;
+@import './common.less';
 
 .viewer {
   background-color: transparent;
@@ -32,6 +32,18 @@
     }
     img {
       width: 400px;
+    }
+    .tech-container {
+      .tech-pill {
+        background-color: @pink;
+        border-radius: 6px;
+        padding: 6px 8px;
+        display: inline-block;
+        margin: 10px 5px;
+        span {
+          color: @white;
+        }
+      }
     }
   }
   .close-viewer {

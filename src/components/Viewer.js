@@ -22,9 +22,7 @@ class Viewer extends Component {
 
   handleClick(e) {
     const { handleClose } = this.props;
-    console.log('what.', this.node);
     if (this.node.contains(e.target)) {
-      console.log('???');
       return;
     }
     handleClose();
@@ -36,12 +34,15 @@ class Viewer extends Component {
     }
     return (
       techItems.map((tech, idx) => (
-        <div key={idx} className="tech">{tech}</div>
+        <div key={idx} className="tech-pill">
+          <span>{tech}</span>
+        </div>
       ))
     );
   }
 
   renderCopy(viewerOptions) {
+    console.log(viewerOptions);
     return (
       <div>
         <h1>{viewerOptions.header}</h1>

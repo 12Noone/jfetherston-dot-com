@@ -4,19 +4,13 @@ import '../stylesheets/InfoPanel.less'
 import ContactForm from './ContactForm';
 
 class InfoPanel extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      contactFormVisible: false
-    }
-  }
+
   render() {
     const { panelData } = this.props;
-    const { contactFormVisible } = this.state;
     return (
       <div className="hero-container">
         <div className="panel-container">
-        {contactFormVisible ? (
+        {panelData.key === 'contact' ? (
           <ContactForm />
         ) : (
           <div className="panel-copy">

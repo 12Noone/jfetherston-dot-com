@@ -5,6 +5,7 @@ import { reducer as form } from 'redux-form';
 export default function configureStore() {
  return createStore(
   form,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
    applyMiddleware(thunk)
  );
 }

@@ -43,7 +43,6 @@ class Viewer extends Component {
   }
 
   renderCopy(viewerOptions) {
-    console.log(viewerOptions);
     return (
       <div>
         <h1>{viewerOptions.header}</h1>

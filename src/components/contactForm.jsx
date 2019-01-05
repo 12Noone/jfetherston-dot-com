@@ -40,7 +40,7 @@ class ContactForm extends Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  onSubmit: () => dispatch(submitMessage())
+  onSubmit: value => dispatch(submitMessage(value))
 });
 
 export default ContactForm = connect(null, mapDispatchToProps)(reduxForm({ form: 'contact'})(ContactForm));

@@ -1,3 +1,3 @@
-export function submitMessage() {
-  console.log('hihihi');
+export function submitMessage(formValue) {
+  console.log(formValue);
 }

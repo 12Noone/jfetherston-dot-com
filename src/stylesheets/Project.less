@@ -13,12 +13,14 @@
     position: relative;
     top: 150px;
     .project-tile {
-      margin: 10px;
-      float: left;
+      margin: 10px auto;
       cursor: pointer;
       width: 240px;
       height: 240px;
       position: relative;
+      @media (min-width: @screen-sm-min) {
+        float: left;
+      }
       &:after {
         content: '';
         position: absolute;

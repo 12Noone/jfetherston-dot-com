@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import _ from 'lodash';
+import ImageCarousel from './ImageCarousel';
 import "../stylesheets/Viewer.less";
 
 
@@ -47,7 +48,7 @@ class Viewer extends Component {
       <div>
         <h1>{viewerOptions.header}</h1>
         <h5>{viewerOptions.subHeading}</h5>
-        <p>{viewerOptions.bodyCopy}</p>
+        <p>{viewerOptions.description}</p>
       </div>
     )
   }
@@ -74,8 +75,11 @@ class Viewer extends Component {
                 { this.renderCopy(viewerOptions) }
               </div>
               <div className="tech-container">
-                <h3>Tech Used:</h3>
+                <h5>Tech Used:</h5>
                 { this.renderTech(viewerOptions, viewerOptions.tech) }
+              </div>
+              <div className="image-carousel">
+                <ImageCarousel />
               </div>
             </div>
           </div>

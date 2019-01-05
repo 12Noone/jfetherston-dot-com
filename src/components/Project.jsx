@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import "../stylesheets/Project.less";
-import { projectData } from '../viewerOptionsData.js';
+import { projectData } from '../projectData.js';
 
 class Project extends Component {
   constructor(props) {

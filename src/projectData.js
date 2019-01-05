@@ -4,7 +4,6 @@ export const projectData = [
     header: 'Theme Design',
     subHeading: 'To infinity and beyond!',
     description: ['Themes have been my baby from the moment I started at Zola. When I first joined the team, we had about 35 themes. Over the course of the year the number of themes have grown by leaps and bounds as I first coded new themes and later variations. Now, I oversee theme development as we continue to create more gorgeous sites for couples to pick from. At the time of writing this, we had 157 in production.'],
-    learningPoints: 'I hadn\'t really worked with Postgresql that much prior to Zola. Learning how to write the migrations needed to insert theme data into the database was a challange.',
     tech: ['Less', 'Postgresql', 'React'],
     color: 'purple'
   },
@@ -17,7 +16,6 @@ export const projectData = [
       ['First: Implement the ability to filter themes by color or by matching invitation. '],
       ['Second: Restructure themes to allow us to implement \'variations\'. This meant a change to how themes were stored in the database going from a single layer object of theme data to a notion of Theme Groups which have themes assigned to them - a parent and a child. Swatch toggle buttons allowed a user to thumb through these variations and ultimately make a selection.']
     ],
-    learningPoints: ['This was the project I cut my React / Redux teeth on. I was hired at Zola with zero React. Learning how to compose class components, set state, make fetch requests, fire action creators, and store data in reducers was agony.'],
     tech: ['React', 'Redux', 'Node', 'Less'],
     color: 'pink',
   },
@@ -29,9 +27,6 @@ export const projectData = [
       ['This was a really fun project and was a great learning experience. The premise of the project was to solve a problem that happens quite a bit - A guest tries to RSVP to a couples\' wedding only to realize they aren\'t on the guest list. '],
       ['Previously, the only solution for guests in this predicament was copy telling them to call Zola customer service. This resulted in a lot of really weird mediation between Zola Customer Care, the couple, and the guests, as we all come together to figure out what the issue is. More often than not, its a misspelling on the couples\'s part. As someone who misspelled my father in law\'s name I can lend some anecdotal evidence on the issue. Much to my chagrin.'],
     ],
-    solution: [
-      ['Cue guest request notifications!']
-    ]
     tech: ['React', 'Redux', 'Redux Forms', 'Less', 'Node'],
     color: 'yellow'
   },
@@ -41,9 +36,6 @@ export const projectData = [
     subHeading: 'Two platforms, two stacks, two looks, too much',
     description: [
       ['When Zola first launched, our sole business was Registries - bringing the best assortment of products and experiences to couples everywhere. In 2017, we launched Zola Weddings which was a suite of online planning tools - Checklist, Guest List, and Websites specifically. Over time the two diverged in terms of style. They were written years apart, which is as good as a decade in tech, so in some parts of the site you might see a square button and others a rounded button. This button topic is contentious at Zola, its best not to bring it up. Other problems included little irritations like being unable to navigate between the two platforms easily on mobile as well as inconsistencies in styles, colors, or even fonts.'],
-    ],
-    solve: [
-      ['Enter Unification. A singular navigation menu would straddle the two platforms. Both platforms received upgrades bringing them to more current web design as well as, well, making them match. My part in this was the secondary nav which changes dynamically with nav items based on the url. I also overhauled the checklist, guest list, and manage pages to allow for the new navigation']
     ],
     tech: ['React', 'Less'],
     color: 'green'
@@ -55,9 +47,6 @@ export const projectData = [
     description: [
       ['Previously, the only way to really interact with Zola\'s planning tools was to create an account. This is a lot of friction to overcome for a user who\'s on the fence between Wedding Wire, The Knot, or the dozens of other competeing wedding tech sites (bet you didn\'t realize Wedding Tech was a thing till just now)']
     ],
-    solve: [
-      ['The solution here was to overhaul how routing works to allow not-users to view these pages as well. We created a suite of guest-user landing pages shouting Zola from every image, page, and paragraph. Now users can visit the themes listing page to peruse designs, or read up on how checklist or guest lists work without the barrier of creating an account.']
-    ],
     tech: ['React', 'Redux', 'React Router', 'Less'],
     color: 'purple'
   },
@@ -67,9 +56,6 @@ export const projectData = [
     subHeading: 'Fun little query param project',
     description: [
       ['Our iOS engineer came up to me the other day with an interesting problem. The way they display the current state of a user\'s wedding website is to make a request to create a snap shot of the user\'s actual wedding website. This works well except because our websites have the ability to hide pages and the showing and hiding of pages is handled server side they were unable to create snap shots of pages that were hidden. As well, they wanted the ability to disable tracking since when these routes are hit no one is actually viewing the pages. Another param (badum tish) was to be able to hide the red banner alerting guests their website was unpublished because they were handling that messaging elsewhere in the App already as well as the navigation.']
-    ],
-    solve: [
-      ['Using query parameters, mobile can pass true values through to the request for a given page even if it\'s hidden, hide or show the navigation, disable banners, and disable tracking. ']
     ],
     tech: ['React', 'Redux', 'React Router', 'Node'],
     color: 'blue'

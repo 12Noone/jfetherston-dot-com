@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import { Field, reduxForm } from 'redux-form'
+import { connect } from 'react-redux';
+import { submitMessage } from '../actions/formActions';
 
 class ContactForm extends Component {
 
   render() {
     const { handleSubmit } = this.props;
+    console.log(handleSubmit);
     return (
       <form onSubmit={handleSubmit}>
         <label htmlFor="first-name">First Name</label>
@@ -36,7 +39,8 @@ class ContactForm extends Component {
   }
 }
 
-export default ContactForm = reduxForm({
-  // a unique name for the form
-  form: 'contact'
-})(ContactForm)
+const mapDispatchToProps = dispatch => ({
+  onSubmit: () => dispatch(submitMessage())
+});
+
+export default ContactForm = connect(null, mapDispatchToProps)(reduxForm({ form: 'contact'})(ContactForm));

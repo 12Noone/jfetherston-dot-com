@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "How to use create-react-app with a custom Node API on Heroku",
   "engines": {
-    "node": "10.x"
+    "npm": "6.2.0",
+    "node": "10.7.0"
   },
   "scripts": {
     "start": "node server",
+    "build": "node scripts/build.js",
     "heroku-postbuild": "cd react-ui/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "cacheDirectories": [

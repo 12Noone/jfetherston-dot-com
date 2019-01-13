@@ -1,8 +1,12 @@
 import fetch from 'isomorphic-fetch';
-
+import * as ActionType from './types/formActionTypes';
 
 function triggerNextState(response) {
   console.log(response);
+  return {
+    type: ActionType.CONTACT_FORM_SUBMITTED,
+    payload: true
+  };
 }
 
 export function submitMessage(formValue) {

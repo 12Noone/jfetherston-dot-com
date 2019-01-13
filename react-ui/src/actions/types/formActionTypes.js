@@ -1,0 +1,1 @@
+export const CONTACT_FORM_SUBMITTED = '/actions/types/CONTACT_FORM_SUBMITTED';

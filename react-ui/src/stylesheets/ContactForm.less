@@ -24,6 +24,14 @@
         input[type='text']:focus::-webkit-input-placeholder  {
           opacity: 0;
         }
+        textarea[type='text']::-webkit-input-placeholder  {
+          -webkit-transition: opacity 0.3s linear; 
+          color: gray;
+        }
+        
+        textarea[type='text']:focus::-webkit-input-placeholder  {
+          opacity: 0;
+        }
       }
     }
     .bi-column {

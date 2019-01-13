@@ -14,6 +14,9 @@ export function submitMessage(formValue) {
     return fetch('/api/contact',
       {
         credentials: 'same-origin',
+        headers: {
+          'Content-Type': 'application/json',
+        },
         method: 'POST',
         body: JSON.stringify(formValue)
       })

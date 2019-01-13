@@ -16,7 +16,8 @@
     "react-ui/node_modules"
   ],
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "sendgrid": "^5.2.3"
   },
   "repository": {
     "type": "git",

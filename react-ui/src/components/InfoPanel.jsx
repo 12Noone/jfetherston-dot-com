@@ -9,7 +9,7 @@ class InfoPanel extends Component {
     const { panelData } = this.props;
     return (
       <div className="hero-container container">
-        <div className="panel-container row">
+        <div className="panel-container">
         {panelData.key === 'contact' ? (
           [
             <div className="panel-copy">

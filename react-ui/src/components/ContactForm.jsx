@@ -12,7 +12,7 @@ class ContactForm extends Component {
       <div id="form-container">
         <div>
           <form onSubmit={handleSubmit} className="form">
-            <div className="bi-column">
+            <div className="bi-column column">
               <div className="form-element">
                 <label className="form-label" htmlFor="message">Email</label>
                 <Field
@@ -34,7 +34,7 @@ class ContactForm extends Component {
                 />
               </div>
             </div>
-            <div className="single-column">
+            <div className="single-column column">
               <div className="form-element">
                 <label className="form-label" htmlFor="message">Message</label>
                 <Field
@@ -46,7 +46,9 @@ class ContactForm extends Component {
                 />
               </div>
             </div>
-            <button className="submit-btn" type='submit'>Drop a line</button>
+            <div className="text-center">
+              <button className="submit-btn" type='submit'>Drop a line</button>
+            </div>
           </form>
         </div>
       </div>

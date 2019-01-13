@@ -9,24 +9,24 @@
     .column {
       .form-element {
         input[type='email']::-webkit-input-placeholder  {
-          -webkit-transition: opacity 0.2s linear; 
-          color: gray;
+          -webkit-transition: opacity 0.2s ease-in; 
+          color: @gray;
         }
         
         input[type='email']:focus::-webkit-input-placeholder  {
           opacity: 0;
         }
         input[type='text']::-webkit-input-placeholder  {
-          -webkit-transition: opacity 0.3s linear; 
-          color: gray;
+          -webkit-transition: opacity 0.2s ease-in; 
+          color: @gray;
         }
         
         input[type='text']:focus::-webkit-input-placeholder  {
           opacity: 0;
         }
         textarea[type='text']::-webkit-input-placeholder  {
-          -webkit-transition: opacity 0.3s linear; 
-          color: gray;
+          -webkit-transition: opacity 0.2s ease-in; 
+          color: @gray;
         }
         
         textarea[type='text']:focus::-webkit-input-placeholder  {
@@ -49,6 +49,7 @@
         }
         input {
           width: 100%;
+          height: 35px;
           &:focus {
             border: 1px solid @pink;
           }
@@ -66,6 +67,7 @@
         }
         textarea {
           width: 100%;
+          height: 100px;
           &:focus {
             border: 1px solid @pink;
           }

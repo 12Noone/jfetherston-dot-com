@@ -9,14 +9,15 @@ class ContactForm extends Component {
     const { handleSubmit } = this.props;
     return (
       <form onSubmit={handleSubmit}>
-        <label htmlFor="first-name">First Name</label>
+        <label htmlFor="first_name">First Name</label>
+        {/*
         <Field
           name='firstName'
           component='input'
           type='text'
           placeholder='First Name'
         />
-        <label htmlFor="last-name">Last Name</label>
+        <label htmlFor="last_name">Last Name</label>
         <Field
           name='lastName'
           component='input'
@@ -40,6 +41,7 @@ class ContactForm extends Component {
           label='subject'
           placeholder='Subject'
         />
+        */}
         <label htmlFor="message">Message</label>
         <Field
           name='message'

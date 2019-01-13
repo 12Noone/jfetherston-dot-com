@@ -7,23 +7,38 @@ class ContactForm extends Component {
 
   render() {
     const { handleSubmit } = this.props;
-    console.log(handleSubmit);
     return (
       <form onSubmit={handleSubmit}>
         <label htmlFor="first-name">First Name</label>
         <Field
-          name='first-name'
+          name='firstName'
           component='input'
           type='text'
           placeholder='First Name'
         />
         <label htmlFor="last-name">Last Name</label>
         <Field
-          name='last-name'
+          name='lastName'
           component='input'
           type='text'
           label='Last Name'
           placeholder='Last Name'
+        />
+        <label htmlFor="message">Email</label>
+        <Field
+          name='email'
+          component='input'
+          type='email'
+          label='Email Address'
+          placeholder='Email Address'
+        />
+        <label htmlFor="message">Subject</label>
+        <Field
+          name='subject'
+          component='input'
+          type='text'
+          label='subject'
+          placeholder='Subject'
         />
         <label htmlFor="message">Message</label>
         <Field

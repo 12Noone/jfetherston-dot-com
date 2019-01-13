@@ -13,7 +13,7 @@ export const viewerOptionsData = {
     key: 'contact',
     header: 'Say hi',
     subHeading: '',
-    bodyCopy: 'probably a contact form. oh god this doesnt mean redux-forms does it',
+    bodyCopy: 'Feel free to send me a message and assuming I\'ve configured my inbox correctly it shouldn\'t go straight to spam.',
     image: false
   },
 };

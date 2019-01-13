@@ -1,0 +1,21 @@
+@import './common.less';
+
+#form-container {
+  margin: auto;
+  .form {
+    .form-label {
+      font-weight: bold;
+    }
+    .submit-btn {
+      cursor: pointer;
+      background-color: @pink;
+      padding: 10 15px;
+      border-radius: 25px;
+      color: @white;
+      transition: .5s background-color ease;
+      &:hover {
+        background-color: @pink-hover;
+      }
+    }
+  }
+}

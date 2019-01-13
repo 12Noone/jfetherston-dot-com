@@ -2,16 +2,20 @@ import React, { Component } from 'react'
 import { Field, reduxForm } from 'redux-form'
 import { connect } from 'react-redux';
 import { submitMessage } from '../actions/formActions';
+import '../stylesheets/ContactForm.less';
 
 class ContactForm extends Component {
 
   render() {
     const { handleSubmit } = this.props;
     return (
-      <div className="container-fluid">
-        <div className="col-xs-12">
-          <form onSubmit={handleSubmit}>
-            <div className="row">
+      <div>
+        <div className="panel-copy">
+          <h1 className="heading">Hello Hello</h1>
+        </div>
+        <div id="form-container">
+          <div>
+            <form onSubmit={handleSubmit} className="form">
               <label className="form-label" htmlFor="message">Email</label>
               <Field
                 name='email'
@@ -28,8 +32,7 @@ class ContactForm extends Component {
                 label='subject'
                 placeholder='Subject'
               />
-            </div>
-            <div className="row">
+
               <label className="form-label" htmlFor="message">Message</label>
               <Field
                 name='message'
@@ -38,9 +41,9 @@ class ContactForm extends Component {
                 label='Message'
                 placeholder='Say what you say'
               />
-            </div>
-            <button type='submit'>Say Hi</button>
-          </form>
+              <button className="submit-btn" type='submit'>Drop a line</button>
+            </form>
+          </div>
         </div>
       </div>
     )

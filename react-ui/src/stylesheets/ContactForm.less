@@ -5,31 +5,34 @@
   max-width: 1000px;
   width: 100%;
   .form {
+    margin: auto;
     width: 100%;
     .column {
       .form-element {
         input[type='email']::-webkit-input-placeholder  {
           -webkit-transition: opacity 0.2s ease-in; 
+          transition: opacity 0.2s ease-in;
           color: @gray;
         }
-        
         input[type='email']:focus::-webkit-input-placeholder  {
           opacity: 0;
         }
+
         input[type='text']::-webkit-input-placeholder  {
           -webkit-transition: opacity 0.2s ease-in; 
+          transition: opacity 0.2s ease-in;
           color: @gray;
         }
-        
         input[type='text']:focus::-webkit-input-placeholder  {
           opacity: 0;
         }
-        textarea[type='text']::-webkit-input-placeholder  {
+
+        input[type='textarea']::-webkit-input-placeholder  {
           -webkit-transition: opacity 0.2s ease-in; 
+          transition: opacity 0.2s ease-in;
           color: @gray;
         }
-        
-        textarea[type='text']:focus::-webkit-input-placeholder  {
+        input[type='textarea']:focus::-webkit-input-placeholder  {
           opacity: 0;
         }
       }

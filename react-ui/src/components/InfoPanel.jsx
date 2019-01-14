@@ -28,7 +28,7 @@ class InfoPanel extends Component {
         )}
         </div>
         <div className="arrow-container">
-          <a href="#projects">
+          <a href="#projects" className="arrow-motion-box">
             <span className="arrow" />
           </a>
         </div>

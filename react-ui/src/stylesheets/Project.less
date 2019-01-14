@@ -6,58 +6,59 @@
   .heading { 
     top: 35px;
   }
-  .project-container {
-    max-width: 1350px;
-    z-index: 0;
-    margin: auto;
-    position: relative;
-    top: 150px;
-    .project-tile {
-      margin: 10px auto;
-      cursor: pointer;
-      width: 240px;
-      height: 240px;
+  .project-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .project-container {
+      z-index: 0;
       position: relative;
-      @media (min-width: 767px) {
-        float: left;
+      top: 100px;
+      .project-tile {
+        cursor: pointer;
+        width: 240px;
+        height: 240px;
+        position: relative;
+        flex-basis: 240px;
         margin: 10px;
-      }
-      &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        transition: .5s background-color ease;
-      }
-      &:hover::after {
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.2);
-      }
-      .project-copy {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        h5 {
-          color: @white;
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          transition: .5s background-color ease;
         }
-      }
-      &.pink {
-        background-color: @pink;
-      }
-      &.yellow {
-        background-color: @yellow;
-      }
-      &.blue {
-        background-color: @blue;
-      }
-      &.green {
-        background-color: @green;
-      }
-      &.purple {
-        background-color: @purple;
+        &:hover::after {
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.2);
+        }
+        .project-copy {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h5 {
+            color: @white;
+          }
+        }
+        &.pink {
+          background-color: @pink;
+        }
+        &.yellow {
+          background-color: @yellow;
+        }
+        &.blue {
+          background-color: @blue;
+        }
+        &.green {
+          background-color: @green;
+        }
+        &.purple {
+          background-color: @purple;
+        }
       }
     }
   }

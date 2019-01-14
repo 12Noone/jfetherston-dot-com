@@ -3,10 +3,11 @@
 .hero-container {
   .panel-container {
     height: 95vh;
+    min-height: 575px;
     .panel-copy {
-      margin: auto;
-      padding: 90px 90px 30px 90px;
+      padding: 110px 90px 30px 90px;
       max-width: 1000px;
+      margin: auto;
       .panel-subheading {
         font-size: 18px;
       }
@@ -14,15 +15,33 @@
   }
   .arrow-container {
     text-align: center;
-    .arrow {
+    position: relative;
+    bottom: 60px;
+    .arrow-motion-box {
+      width: 40px;
+      height: 30px;
+      margin: auto;
       position: relative;
-      bottom: 25px;
-      width: 0; 
-      height: 0; 
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent; 
-      border-top: 20px solid @pink;
       cursor: pointer;
+      &:hover {
+        .arrow {
+          transform: translateY(10px);
+        }
+      }
+      .arrow {
+        position: absolute;
+        transition: transform .25s ease-in;
+        width: 0; 
+        height: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent; 
+        border-top: 20px solid @pink;
+        cursor: pointer;
+      }
     }
   }
 }

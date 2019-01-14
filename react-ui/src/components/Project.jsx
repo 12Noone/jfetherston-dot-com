@@ -29,7 +29,9 @@ class Project extends Component {
     return (
       <div id="projects">
         <h1 className="heading">Past and Current Projects</h1>
-        { this.renderProjectTile() }
+        <div className="project-grid">
+          { this.renderProjectTile() }
+        </div>
       </div>
     );
   };

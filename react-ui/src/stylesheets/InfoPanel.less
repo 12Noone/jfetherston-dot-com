@@ -5,9 +5,13 @@
     height: 95vh;
     min-height: 575px;
     .panel-copy {
-      padding: 110px 90px 30px 90px;
       max-width: 1000px;
-      margin: auto;
+      text-align: center;
+      padding: 110px 30px 30px 30px;
+      @media (min-width: 762px) {
+        padding: 110px 90px 30px 90px;
+        margin: auto;
+      }
       .panel-subheading {
         font-size: 18px;
       }

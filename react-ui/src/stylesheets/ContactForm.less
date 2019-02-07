@@ -1,10 +1,12 @@
 @import './common.less';
 
 #form-container {
-  padding: 0 90px;
   max-width: 1000px;
   margin: auto;
   width: 100%;
+  @media (min-width: 767px) {
+    padding: 0 90px;
+  }
   .form {
     width: 100%;
     .column {
@@ -35,24 +37,33 @@
         textarea[type='text']:focus::-webkit-input-placeholder  {
           opacity: 0;
         }
+        .form-label {
+          margin: 10px 0;
+          font-weight: bold;
+          display: block;
+        }
       }
     }
     .bi-column {
       width: 100%;
       .form-element {
-        width: 48%;
-        display: inline-block;
-        margin-right: 20px;
+        width: 100%;
+        display: block;
+        @media(min-width: 767px) {
+          display: inline-block;
+          margin-right: 20px;
+          width: 48%;
+
+        }
         &:last-child {
           margin-right: 0;
-        }
-        .form-label {
-          font-weight: bold;
-          display: block;
         }
         input {
           width: 100%;
           height: 35px;
+          @media (max-width: 767px) {
+            border: 1px solid @gray;
+          }
           &:focus {
             border: 1px solid @pink;
           }
@@ -63,14 +74,10 @@
       width: 100%;
       .form-element {
         width: 100%;
-        .form-label {
-          margin-top: 10px;
-          font-weight: bold;
-          display: block;
-        }
         textarea {
           width: 100%;
           height: 100px;
+          border: 1px solid @gray;
           &:focus {
             border: 1px solid @pink;
           }
@@ -80,11 +87,14 @@
     .submit-btn {
       cursor: pointer;
       background-color: @pink;
-      padding: 5px 15px;
+      padding: 8px 20px;
       border-radius: 25px;
       color: @white;
       transition: .5s background-color ease;
       margin-top: 25px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
       &:hover {
         background-color: @pink-hover;
       }

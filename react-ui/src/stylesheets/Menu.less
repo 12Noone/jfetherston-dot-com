@@ -8,9 +8,26 @@
   padding: 20px;
   z-index: 1;
   .heading {
+    &:after {
+      @media (max-width: 576px) {
+        content: none;
+      }
+    }
     text-align: left;
     h1 {
       display: inline;
+      .period {
+        position: relative;
+        &:after {
+          height: 8px;
+          width: 8px;
+          background-color: @pink;
+          position: absolute;
+          content: '';
+          border-radius: 50%;
+          bottom: 7px;
+        }
+      }
     }
   }
   .nav-container {
@@ -25,14 +42,16 @@
           font-weight: 700;
         }
         &:after {
-          content: '';
-          position: absolute;
-          height: 5px;
-          width: 0;
-          left: 0;
-          bottom: -5px;
-          background-color: @pink;
-          transition: width .5s ease;
+          @media (min-width: 767px) {
+            content: '';
+            position: absolute;
+            height: 5px;
+            width: 0;
+            left: 0;
+            bottom: -5px;
+            background-color: @pink;
+            transition: width .5s ease;
+          }
         }
         &:hover::after {
           width: 100%;

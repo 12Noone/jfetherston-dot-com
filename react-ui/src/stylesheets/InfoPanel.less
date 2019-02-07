@@ -2,15 +2,20 @@
 
 .hero-container {
   .panel-container {
-    height: 95vh;
-    min-height: 575px;
+    height: 100vh;
+    @media (min-width: 767px) {
+      height: 95vh;
+      min-height: 575px;
+
+    }
     .panel-copy {
       max-width: 1000px;
       text-align: center;
       padding: 110px 30px 30px 30px;
-      @media (min-width: 762px) {
+      @media (min-width: 767px) {
         padding: 110px 90px 30px 90px;
         margin: auto;
+        text-align: left;
       }
       .panel-subheading {
         font-size: 18px;

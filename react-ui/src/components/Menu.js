@@ -11,7 +11,7 @@ class Menu extends Component {
       <div className="menu-container">
         <div className="heading">
           <h1 className="d-none d-sm-block">Jill Fetherston</h1>
-          <h1 className="d-block d-sm-none">Jill F.</h1>
+          <h1 className="d-block d-sm-none mobile-jill">Jill F<span className="period" /></h1>
         </div>
         <div className="nav-container">
           <ul className="inline-list">

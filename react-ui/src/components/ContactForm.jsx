@@ -3,6 +3,8 @@ import { Field, reduxForm } from 'redux-form'
 import { connect } from 'react-redux';
 import { submitMessage } from '../actions/formActions';
 import '../stylesheets/ContactForm.less';
+import * as Validate from './Validations'
+import { renderField, RenderTextareaField } from './formElements';
 
 class ContactForm extends Component {
 
@@ -14,23 +16,25 @@ class ContactForm extends Component {
           <form onSubmit={handleSubmit} className="form">
             <div className="bi-column column">
               <div className="form-element">
-                <label className="form-label" htmlFor="message">Email</label>
+                <label className="form-label" htmlFor="message">Email Address</label>
                 <Field
                   name='email'
-                  component='input'
+                  component={renderField}
                   type='email'
-                  label='Email Address'
                   placeholder='Email Address'
+                  required
+                  validate={[Validate.REQUIRED, Validate.EMAIL]}
                 />
               </div>
               <div className="form-element">
                 <label className="form-label" htmlFor="message">Subject</label>
                 <Field
                   name='subject'
-                  component='input'
+                  component={renderField}
                   type='text'
-                  label='subject'
                   placeholder='Subject'
+                  validate={[Validate.REQUIRED, Validate.MAX_LENGTH_100]}
+                  required
                 />
               </div>
             </div>
@@ -39,10 +43,11 @@ class ContactForm extends Component {
                 <label className="form-label" htmlFor="message">Message</label>
                 <Field
                   name='message'
-                  component='textarea'
+                  component={RenderTextareaField}
                   type='text'
-                  label='Message'
                   placeholder='Say what you say'
+                  validate={[Validate.REQUIRED, Validate.MAX_LENGTH_1000]}
+                  required
                 />
               </div>
             </div>

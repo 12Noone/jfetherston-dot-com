@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import ImageCarousel from './ImageCarousel';
 import "../stylesheets/Viewer.less";
 
 
@@ -76,9 +75,6 @@ class Viewer extends Component {
               <div className="tech-container">
                 <h5>Tech Used:</h5>
                 { this.renderTech(viewerOptions, viewerOptions.tech) }
-              </div>
-              <div className="image-carousel">
-                <ImageCarousel />
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ export const viewerOptionsData = {
     key: 'about',
     header: 'The other things',
     subHeading: 'Coding, Knitting, Reading, and Running',
-    bodyCopy: 'I\'m currently an engineer with Zola, the best the tech industry has to offer in the way of wedding registries and planning tools. When I\'m not working to make wedding plan suck less (a task that Sisyphus would sympathize with) you can find me knitting or perhaps cross stitching, plugged into an audio book and tuning out the world. Occasionally I guilt myself into exercise with a half marathon or two.',
+    bodyCopy: 'I\'m currently an engineer with Boxed, the best the tech industry has to offer in the way of bulk grocery shipping. When I\'m not working to make Saturday chores suck less (a task that Sisyphus would sympathize with) you can find me knitting or perhaps cross stitching, plugged into an audio book and tuning out the world. Occasionally I guilt myself into exercise with a half marathon or two.',
   },
   contact: {
     key: 'contact',

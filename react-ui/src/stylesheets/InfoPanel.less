@@ -2,9 +2,10 @@
 
 .hero-container {
   .panel-container {
-    // height: 100vh;
+    height: 100vh;
+    display: flex;
     @media (min-width: 767px) {
-      // height: 80vh;
+      height: 80vh;
       min-height: 575px;
 
     }
@@ -15,12 +16,18 @@
       @media (min-width: 767px) {
         margin: auto;
         width: 70%;
-        padding: 30px 90px 30px 90px;
+        padding: 0px 90px 0px 90px;
+        position: relative;
+        bottom: 30px;
         margin: auto;
         text-align: left;
       }
       .panel-subheading {
-        font-size: 18px;
+        font-size: 22px;
+      }
+      .copy {
+        font-size: 20px;
+        line-height: 32px;
       }
     }
   }

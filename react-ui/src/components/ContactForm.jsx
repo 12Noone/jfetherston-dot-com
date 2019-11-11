@@ -16,7 +16,7 @@ class ContactForm extends Component {
           <form onSubmit={handleSubmit} className="form">
             <div className="bi-column column">
               <div className="form-element">
-                <label className="form-label" htmlFor="message">Email Address</label>
+                <label className="form-label" htmlFor="message">EMAIL ADDRESS</label>
                 <Field
                   name='email'
                   component={renderField}
@@ -27,7 +27,7 @@ class ContactForm extends Component {
                 />
               </div>
               <div className="form-element">
-                <label className="form-label" htmlFor="message">Subject</label>
+                <label className="form-label" htmlFor="message">SUBJECT</label>
                 <Field
                   name='subject'
                   component={renderField}
@@ -40,7 +40,7 @@ class ContactForm extends Component {
             </div>
             <div className="single-column column">
               <div className="form-element">
-                <label className="form-label" htmlFor="message">Message</label>
+                <label className="form-label" htmlFor="message">MESSAGE</label>
                 <Field
                   name='message'
                   component={RenderTextareaField}

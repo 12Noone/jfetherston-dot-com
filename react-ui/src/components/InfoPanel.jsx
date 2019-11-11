@@ -15,7 +15,7 @@ class InfoPanel extends Component {
             <div className="panel-copy">
               <h1 className="heading">{panelData.header}</h1>
               <h2 className="panel-subheading">{panelData.subHeading}</h2>
-              <p>{panelData.bodyCopy}</p>
+              <p className="copy">{panelData.bodyCopy}</p>
             </div>,
             <ContactForm />
           ]
